@@ -1,34 +1,34 @@
 import React from "react";
-import arrow from "../img/nav-items/arrow.svg";
+import { Link } from "react-scroll";
 const Navbar = () => {
   return (
     <React.Fragment>
       <header>
         <nav>
-          <div className="logo">LOGO</div>
+          <div className="logo">Pirates</div>
+
           <input id="check-box" type="checkbox" />
           <label htmlFor="check-box">
-            <i id="menu-bar" className="fas fa-bars" />
-            <div id="compass-img">
-              <img id="arrow" src={arrow} alt={"^"} />
-            </div>
+            <div id="wheel-img"></div>
           </label>
           <ul id="holder">
             <li>
-              <a href="/">Home</a>
+              <Link  to="about"  smooth={true} offset={0} delay={0} duration={500}>About</Link>
             </li>
             <li>
-              <a href="/about">About</a>
+              <a href="https://piratescorp.com/hosting/clientarea.php">Login</a>
             </li>
             <li>
-              <a href="/service">Services</a>
+              <a href="https://piratescorp.com/hosting/register.php">Sign up</a>
             </li>
             <li>
-              <a href="/testi">Testimonials</a>
+              <Link to="customers"  smooth={true} offset={0} delay={0} duration={100}>Customers</Link>
             </li>
+
             <li>
-              <a href="/contact">Contact</a>
+              <Link to="contact"  smooth={true} offset={0} delay={0} duration={100}>Contact</Link>
             </li>
+
             <label htmlFor="check-box" id="close-menu">
               <i className="fas fa-times" />
             </label>

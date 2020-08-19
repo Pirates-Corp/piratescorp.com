@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import sea from "../img/home-items/sea.png";
 import boat from "../img/home-items/Boat.png";
 import Navbar from "../Components/Navbar";
@@ -21,7 +22,8 @@ const Home = () => {
         sun.style.opacity = "0.6";
         sun.style.boxShadow = "1px 25px 44px rgba(228, 225, 136, 0.35)";
         sun.style.transition = "0.3s";
-        sky.style.background="linear-gradient(178.14deg, rgba(148, 253, 236, 0.7) 17.57%, rgba(255, 255, 255, 0) 78.18%, rgba(255, 255, 255, 0) 78.46%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF";
+        sky.style.background =
+          "linear-gradient(178.14deg, rgba(148, 253, 236, 0.7) 17.57%, rgba(255, 255, 255, 0) 78.18%, rgba(255, 255, 255, 0) 78.46%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF";
 
         //home.style.background="red";
       } else {
@@ -29,9 +31,8 @@ const Home = () => {
           "linear-gradient(180deg,rgba(249, 164, 79, 0.42) 60.47%,rgba(205, 114, 21, 0) 118.59%)";
         sun.style.transition = "0.4s";
         sky.style.transition = "0.4s";
-        sky.style.background=
-        "linear-gradient(178.23deg, rgba(121, 252, 231, 0.7) 17.54%,rgba(255, 255, 255, 0) 98.5%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF"
-
+        sky.style.background =
+          "linear-gradient(178.23deg, rgba(121, 252, 231, 0.7) 17.54%,rgba(255, 255, 255, 0) 98.5%), linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #FFFFFF";
       }
     }
 
@@ -41,16 +42,17 @@ const Home = () => {
     }
   });
 
-
-
   return (
     <React.Fragment>
       <section id="home">
         <Navbar />
         <h2 className="title">
-          let's make huge by <br />
+          Let's make huge by <br />
           doing small
         </h2>
+        <Link className="pi-btn"  to="service"  smooth={true}  delay={0} duration={500}>
+          Get Started <i className="fas fa-long-arrow-alt-right"></i>
+        </Link>
         <img src={boat} className="boat" id="boat" alt="boat" />
         <div className="sun" id="sun"></div>
         <img src={sea} className="sea" id="sea" alt="sea" />

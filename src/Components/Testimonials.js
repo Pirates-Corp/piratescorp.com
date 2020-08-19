@@ -10,8 +10,8 @@ const Testmonials = () => {
     return (
         <React.Fragment>
 
-            <section id="testimonials">
-                <h3 className="section-heading">What our clients says..</h3>
+            <section id="customers">
+                <h3 className="section-heading">What Our Customers Say..</h3>
 
 
                 <OwlCarousel

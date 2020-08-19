@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
@@ -16,16 +17,20 @@ const Footer = () => {
                 <h4 className="footer-heading">Service</h4>
                 <ul className="footer-list">
                   <li>
-                    <a href="/test">Web hosting</a>
+                    <a href="https://piratescorp.com/hosting/cart.php">Web hosting</a>
                   </li>
                   <li>
-                    <a href="/test">Domain Registeration</a>
+                    <a href="https://piratescorp.com/hosting/" >Domain Registeration</a>
                   </li>
                   <li>
-                    <a href="/test">Website development</a>
+                  <Link to="contact"  smooth={true} offset={0} delay={0} duration={500}>
+                 Website Development
+                </Link>
                   </li>
                   <li>
-                    <a href="/test">Graphic / web Designing</a>
+                  <Link to="contact"  smooth={true} offset={0} delay={0} duration={500}>
+                  Graphic and Web Designing
+                </Link>
                   </li>
                 </ul>
               </div>
@@ -34,13 +39,13 @@ const Footer = () => {
                 <h4 className="footer-heading">company</h4>
                 <ul className="footer-list">
                   <li>
-                    <a href="/test">About</a>
+                  <Link  to="about"  smooth={true} offset={0} delay={0} duration={500}>About</Link>
                   </li>
                   <li>
-                    <a href="/tos">terms of service</a>
+                    <a href="/terms-and-conditions">terms and Conditions</a>
                   </li>
                   <li>
-                    <a href="/test">privacy policy</a>
+                    <a href="/privacy-policy">privacy policy</a>
                   </li>
                 </ul>
               </div>
@@ -49,12 +54,12 @@ const Footer = () => {
                 <h4 className="footer-heading">Support</h4>
                 <ul className="footer-list">
                   <li>
-                    <a href="/test">
+                    <a href="tel:+919840793240">
                       <i className="fas fa-phone-alt"></i>+91 98407 93240
                     </a>
                   </li>
                   <li>
-                    <a href="/test">
+                    <a href="mailto:support@piratescorp.com">
                       <i className="fas fa-envelope-open"></i>
                       support@piratescorp.com
                     </a>
