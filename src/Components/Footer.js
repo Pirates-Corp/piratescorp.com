@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import logo_white from "../img/logo-white.png";
 
 const Footer = () => {
   return (
@@ -9,28 +10,46 @@ const Footer = () => {
           <div className="container">
             <div className="footer-row">
               <div className="footer-sec">
-                <div className="footer-logo">Pirates</div>
-                <p className="logo-text">We make the best</p>
+                <div className="footer-logo">
+                  <img src={logo_white} alt="pirates" />
+                </div>
+                <p className="logo-text">Pirates</p>
               </div>
 
               <div className="footer-sec">
                 <h4 className="footer-heading">Service</h4>
                 <ul className="footer-list">
                   <li>
-                    <a href="https://piratescorp.com/hosting/cart.php">Web hosting</a>
+                    <a href="https://piratescorp.com/hosting/cart.php">
+                      Web hosting
+                    </a>
                   </li>
                   <li>
-                    <a href="https://piratescorp.com/hosting/" >Domain Registeration</a>
+                    <a href="https://piratescorp.com/hosting/">
+                      Domain Registeration
+                    </a>
                   </li>
                   <li>
-                  <Link to="contact"  smooth={true} offset={0} delay={0} duration={500}>
-                 Website Development
-                </Link>
+                    <Link
+                      to="contact"
+                      smooth={true}
+                      offset={0}
+                      delay={0}
+                      duration={500}
+                    >
+                      Website Development
+                    </Link>
                   </li>
                   <li>
-                  <Link to="contact"  smooth={true} offset={0} delay={0} duration={500}>
-                  Graphic and Web Designing
-                </Link>
+                    <Link
+                      to="contact"
+                      smooth={true}
+                      offset={0}
+                      delay={0}
+                      duration={500}
+                    >
+                      Graphic and Web Designing
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -39,7 +58,15 @@ const Footer = () => {
                 <h4 className="footer-heading">company</h4>
                 <ul className="footer-list">
                   <li>
-                  <Link  to="about"  smooth={true} offset={0} delay={0} duration={500}>About</Link>
+                    <Link
+                      to="about"
+                      smooth={true}
+                      offset={0}
+                      delay={0}
+                      duration={500}
+                    >
+                      About
+                    </Link>
                   </li>
                   <li>
                     <a href="/terms-and-conditions">terms and Conditions</a>

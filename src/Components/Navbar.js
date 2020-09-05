@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-scroll";
 import logo from "../img/logo.png";
+import navbtn from "../img/nav.svg";
 const Navbar = () => {
   const close = () => {
     if (document.getElementById("check-box")) {
@@ -18,8 +19,7 @@ const Navbar = () => {
 
           <input id="check-box" type="checkbox" />
           <label htmlFor="check-box" id="menu-img">
-            {/* <div id="wheel-img"></div> */}
-            <i className="fas fa-bars" />
+            <img src={navbtn} alt="-" />
           </label>
 
           <ul id="holder">

@@ -8,7 +8,7 @@ import land from "../img/home-items/land.png";
 const Home = () => {
   window.addEventListener("scroll", () => {
     let winScrl = window.scrollY;
-    let sunVal = 110;
+    let sunVal = 80;
     let boatVal = 35;
 
     if (document.getElementById("sun") && document.getElementById("home")) {
