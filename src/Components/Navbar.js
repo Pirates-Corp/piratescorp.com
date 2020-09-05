@@ -1,32 +1,72 @@
 import React from "react";
 import { Link } from "react-scroll";
+import logo from "../img/logo.png";
 const Navbar = () => {
+  const close = () => {
+    if (document.getElementById("check-box")) {
+      document.getElementById("check-box").checked = false;
+    }
+  };
+
   return (
     <React.Fragment>
       <header>
-        <nav>
-          <div className="logo">Pirates</div>
+        <nav id="nav">
+          <div className="logo">
+            <img src={logo} alt="Pirates" />
+          </div>
 
           <input id="check-box" type="checkbox" />
-          <label htmlFor="check-box">
-            <div id="wheel-img"></div>
+          <label htmlFor="check-box" id="menu-img">
+            {/* <div id="wheel-img"></div> */}
+            <i className="fas fa-bars" />
           </label>
+
           <ul id="holder">
             <li>
-              <Link  to="about"  smooth={true} offset={0} delay={0} duration={500}>About</Link>
+              <Link
+                onClick={close}
+                to="about"
+                smooth={true}
+                offset={0}
+                delay={0}
+                duration={500}
+              >
+                About
+              </Link>
             </li>
             <li>
               <a href="https://piratescorp.com/hosting/clientarea.php">Login</a>
             </li>
             <li>
-              <a href="https://piratescorp.com/hosting/register.php">Sign up</a>
+              <a href="https://piratescorp.com/hosting/register.php">
+                Register
+              </a>
             </li>
             <li>
-              <Link to="customers"  smooth={true} offset={0} delay={0} duration={100}>Customers</Link>
+              <Link
+                onClick={close}
+                to="customers"
+                smooth={true}
+                offset={0}
+                delay={0}
+                duration={100}
+              >
+                Customers
+              </Link>
             </li>
 
             <li>
-              <Link to="contact"  smooth={true} offset={0} delay={0} duration={100}>Contact</Link>
+              <Link
+                onClick={close}
+                to="contact"
+                smooth={true}
+                offset={0}
+                delay={0}
+                duration={100}
+              >
+                Contact
+              </Link>
             </li>
 
             <label htmlFor="check-box" id="close-menu">

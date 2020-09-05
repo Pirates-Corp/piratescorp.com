@@ -11,7 +11,10 @@ const Testmonials = () => {
         <React.Fragment>
 
             <section id="customers">
+                <div className="contanier">
                 <h3 className="section-heading">What Our Customers Say..</h3>
+                </div>
+               
 
 
                 <OwlCarousel
@@ -32,8 +35,10 @@ const Testmonials = () => {
 
                             <div className="testimonial-review">
 
-                                <p className="review">Vom Rechte, das mit Recht; denn alles, was ihr Sünde, Zerstörung, kurz
-                                 das Böse will und stets das Gute schafft.   das Böse will und stets das Gute schafft.</p>
+                                <p className="review">Pirates helped to reach study materials widely to students as well as
+                                            teachers. Like this team by doing their
+                                            well wishing activities surely our society will be improved undoubtly....
+                                            Thank you. </p>
 
                                 <div className="client-details">
                                     <p className="client-name">R.santhi</p>
@@ -55,8 +60,7 @@ const Testmonials = () => {
 
                             <div className="testimonial-review">
 
-                                <p className="review">Vom Rechte, das mit Recht; denn alles, was ihr Sünde, Zerstörung, kurz
-                                    das Böse will und stets das Gute schafft.   das Böse will und stets das Gute schafft.</p>
+                                <p className="review">Thanks a lot to Pirates for your work , this helps to get my business to the next level.</p>
 
                                 <div className="client-details">
                                     <p className="client-name">V.Senthamizhselvan</p>

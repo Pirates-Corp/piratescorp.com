@@ -1,13 +1,17 @@
 import React from "react";
 import { Link } from "react-scroll";
-import server from "../img/paret_server.gif";
+import server from "../img/service-img/secure_server.svg";
+import design from "../img/service-img/design.svg";
+import domain from "../img/service-img/Domain.svg";
+import website from "../img/service-img/website.svg";
 
 const Service = () => {
   return (
     <React.Fragment>
       <section id="service">
+      <div className="container">
         <h3 className="section-heading">Service</h3>
-        <div className="container">
+       
           <div className="service-row ">
             <div className="pic-side">
               <img className="service-img" src={server} alt="webhosting" />
@@ -48,13 +52,13 @@ const Service = () => {
               </div>
             </div>
             <div className="pic-side">
-              <img className="service-img" src={server} alt="webhosting" />
+              <img className="service-img" src={domain} alt="domain" />
             </div>
           </div>
 
           <div className="service-row ">
             <div className="pic-side">
-              <img className="service-img" src={server} alt="webhosting" />
+              <img className="service-img" src={website} alt="website development" />
             </div>
             <div className="info-side">
               <h4 className="service-heading">website Development</h4>
@@ -87,7 +91,7 @@ const Service = () => {
               </div>
             </div>
             <div className="pic-side">
-              <img className="service-img" src={server} alt="webhosting" />
+              <img className="service-img" src={design} alt="Design" />
             </div>
           </div>
         </div>

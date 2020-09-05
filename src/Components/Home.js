@@ -8,7 +8,7 @@ import land from "../img/home-items/land.png";
 const Home = () => {
   window.addEventListener("scroll", () => {
     let winScrl = window.scrollY;
-    let sunVal = 120;
+    let sunVal = 110;
     let boatVal = 35;
 
     if (document.getElementById("sun") && document.getElementById("home")) {
@@ -16,7 +16,6 @@ const Home = () => {
       const sky = document.getElementById("home");
       sun.style.bottom = sunVal + winScrl + "px";
 
-      console.log(winScrl);
       if (winScrl > 50) {
         sun.style.background = "rgba(249, 164, 79, 0.6)";
         sun.style.opacity = "0.6";
@@ -46,13 +45,22 @@ const Home = () => {
     <React.Fragment>
       <section id="home">
         <Navbar />
-        <h2 className="title">
-          Let's make huge by <br />
-          doing small
-        </h2>
-        <Link className="pi-btn"  to="service"  smooth={true}  delay={0} duration={500}>
-          Get Started <i className="fas fa-long-arrow-alt-right"></i>
-        </Link>
+        <div className="get">
+          <h2 className="title">
+            Let's make huge by <br />
+            doing small
+          </h2>
+          <Link
+            className="pi-btn"
+            to="service"
+            smooth={true}
+            delay={0}
+            duration={500}
+          >
+            Get Started
+          </Link>
+        </div>
+
         <img src={boat} className="boat" id="boat" alt="boat" />
         <div className="sun" id="sun"></div>
         <img src={sea} className="sea" id="sea" alt="sea" />
