@@ -39,7 +39,7 @@ const Contact = () => {
                   <p id="contact-info">
                     No: 93,Shop complex,Five rathas,
                     <br />
-                    Mahabalipuram , India
+                    Mahabalipuram,India
                   </p>
                 </div>
               </div>

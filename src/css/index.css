@@ -2165,6 +2165,9 @@ nav 2
   }
   .testimonial-row {
     margin-top: 5rem;
+    z-index: 1;
+    left: 25px;
+    bottom: 3em;
     display: grid;
     grid-template-columns: 30% 70%;
     margin-top: 3rem;
@@ -2667,12 +2670,12 @@ nav 2
   }
 
   .boat {
-    height: 10rem;
-    width: 10rem;
+    height: 13rem;
+    width: 13rem;
     position: absolute;
     z-index: 1;
     left: 25px;
-    bottom: 300px;
+    bottom: 270px;
     right: 50vw;
     margin-left: 15vw;
   }

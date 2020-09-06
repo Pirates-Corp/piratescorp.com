@@ -82,7 +82,7 @@ const Footer = () => {
                 <ul className="footer-list">
                   <li>
                     <a href="tel:+918428015452">
-                      <i className="fas fa-phone-alt"></i>+91 84280 gg15452
+                      <i className="fas fa-phone-alt"></i>+91 84280 15452
                     </a>
                   </li>
                   <li>
