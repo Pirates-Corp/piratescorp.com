@@ -263,6 +263,7 @@ nav 2
     font-family: "poppins";
     text-decoration: none;
     color: black;
+    cursor: pointer;
   }
 
   #holder li a:hover {
@@ -320,7 +321,7 @@ nav 2
     width: 8rem;
     position: absolute;
     z-index: 2;
-    bottom: 100px;
+    bottom: 90px;
     left: 25px;
   }
 
@@ -341,9 +342,9 @@ nav 2
     position: absolute;
     right: 20vh;
     left: 30vw;
-    bottom: 90px;
-    height: 18rem;
-    width: 18rem;
+    bottom: 65px;
+    height: 22rem;
+    width: 22rem;
     overflow: hidden;
     border-radius: 50%;
     background: linear-gradient(
@@ -501,8 +502,8 @@ nav 2
   }
 
   .logo-box {
-    width: 170px;
-    height: 170px;
+    width: 250px;
+    height: 250px;
     margin: 0px auto;
   }
 
@@ -692,7 +693,7 @@ nav 2
     font-size: 1rem;
     color: var(--white);
     font-family: "Roboto";
-    margin-left: 1.5rem;
+    margin-left: 1.4rem;
   }
 
   .footer-list {
@@ -1957,7 +1958,6 @@ nav 2
 
   .logo img {
     margin-left: 70px;
-    margin-top: 25px;
     text-align: center;
     width: 5rem;
     height: 5rem;
@@ -2561,7 +2561,6 @@ nav 2
 
   .logo img {
     margin-left: 70px;
-    margin-top: 25px;
     text-align: center;
     width: 7rem;
     height: 7rem;

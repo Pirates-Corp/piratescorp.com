@@ -81,8 +81,8 @@ const Footer = () => {
                 <h4 className="footer-heading">Support</h4>
                 <ul className="footer-list">
                   <li>
-                    <a href="tel:+919840793240">
-                      <i className="fas fa-phone-alt"></i>+91 98407 93240
+                    <a href="tel:+918428015452">
+                      <i className="fas fa-phone-alt"></i>+91 84280 gg15452
                     </a>
                   </li>
                   <li>
