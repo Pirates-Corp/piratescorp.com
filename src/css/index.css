@@ -561,7 +561,7 @@ nav 2
     min-height: 90vh;
   }
   .con-bg {
-    background-image: url(../img/contact-bg.png);
+    background-image: url(../img/contact_bg.png);
     display: block;
     width: 100% !important;
     background-repeat: no-repeat;
@@ -1139,7 +1139,7 @@ nav 2
     min-height: 80vh;
   }
   .con-bg {
-    background-image: url(../img/contact-bg.png);
+    background-image: url(../img/contact_bg.png);
     display: block;
     width: 100vw !important;
     background-repeat: no-repeat;
@@ -1735,7 +1735,7 @@ nav 2
     min-height: 90vh;
   }
   .con-bg {
-    background-image: url(../img/contact-bg.png);
+    background-image: url(../img/contact_bg.png);
     width: 100%;
     background-repeat: no-repeat;
     background-position: right;
@@ -2338,7 +2338,7 @@ nav 2
   }
 
   .con-bg {
-    background-image: url(../img/contact-bg.png);
+    background-image: url(../img/contact_bg.png);
     width: 100%;
     background-repeat: no-repeat;
     background-position: right;
@@ -2933,7 +2933,7 @@ nav 2
   }
 
   .con-bg {
-    background-image: url(../img/contact-bg.png);
+    background-image: url(../img/contact_bg.png);
     width: 100%;
     background-repeat: no-repeat;
     background-position: right;

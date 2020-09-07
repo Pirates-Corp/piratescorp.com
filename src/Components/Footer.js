@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import logo_white from "../img/logo-white.png";
+import logo_white from "../img/logo-footer.png";
 
 const Footer = () => {
   return (
@@ -13,7 +13,6 @@ const Footer = () => {
                 <div className="footer-logo">
                   <img src={logo_white} alt="pirates" />
                 </div>
-                <p className="logo-text">Pirates</p>
               </div>
 
               <div className="footer-sec">

@@ -15,31 +15,29 @@ const Testmonials = () => {
         </div>
 
         <OwlCarousel className="owl-theme" loop margin={10} items={1}>
-
-        <div className="container item">
+          <div className="container item">
             <div className="testimonial-row">
               <div className="testimonial-pic">
                 <div className="person-bg">
-                  <img className="person" src={client3} alt="chillstudies" />
+                  <img className="person" src={client2} alt="chillstudies" />
                 </div>
               </div>
 
               <div className="testimonial-review">
                 <p className="review">
-                Hi from Turkey. Great work from Piratescorp, this hosting was really good. And also good customer service they have, whenever I need help they were always there.
+                  Thanks a lot to Pirates for your work , this helps to get my
+                  business to the next level.
                 </p>
 
                 <div className="client-details">
-                  <p className="client-name">Adile cetinkaya</p>
+                  <p className="client-name">V.Senthamizhselvan</p>
                   <a href="/srimurugansculpture.com" className="website">
-                    Web Developer.
+                    srimurugansculpture.com
                   </a>
                 </div>
               </div>
             </div>
           </div>
-
-
 
           <div className="container item">
             <div className="testimonial-row">
@@ -71,32 +69,26 @@ const Testmonials = () => {
             <div className="testimonial-row">
               <div className="testimonial-pic">
                 <div className="person-bg">
-                  <img className="person" src={client2} alt="chillstudies" />
+                  <img className="person" src={client3} alt="chillstudies" />
                 </div>
               </div>
 
               <div className="testimonial-review">
                 <p className="review">
-                  Thanks a lot to Pirates for your work , this helps to get my
-                  business to the next level.
+                  Hi from Turkey. Great work from Piratescorp, this hosting was
+                  really good. And also good customer service they have,
+                  whenever I need help they were always there.
                 </p>
 
                 <div className="client-details">
-                  <p className="client-name">V.Senthamizhselvan</p>
+                  <p className="client-name">Adile cetinkaya</p>
                   <a href="/srimurugansculpture.com" className="website">
-                    srimurugansculpture.com
+                    Web Developer.
                   </a>
                 </div>
               </div>
             </div>
           </div>
-
-
-
-        
-
-
-
         </OwlCarousel>
       </section>
     </React.Fragment>
