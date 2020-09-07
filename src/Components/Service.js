@@ -9,9 +9,9 @@ const Service = () => {
   return (
     <React.Fragment>
       <section id="service">
-      <div className="container">
-        <h3 className="section-heading">Service</h3>
-       
+        <div className="container">
+          <h3 className="section-heading">Service</h3>
+
           <div className="service-row ">
             <div className="pic-side">
               <img className="service-img" src={server} alt="webhosting" />
@@ -29,7 +29,10 @@ const Service = () => {
                 provided at its best.
               </p>
               <div className="btn-holder">
-                <a href="https://piratescorp.com/hosting/cart.php" className="pi-btn2">
+                <a
+                  href="https://piratescorp.com/hosting/cart.php"
+                  className="pi-btn2"
+                >
                   <i className="fas fa-server"></i>View Plans
                 </a>
               </div>
@@ -58,7 +61,11 @@ const Service = () => {
 
           <div className="service-row ">
             <div className="pic-side">
-              <img className="service-img" src={website} alt="website development" />
+              <img
+                className="service-img"
+                src={website}
+                alt="website development"
+              />
             </div>
             <div className="info-side">
               <h4 className="service-heading">website Development</h4>
@@ -68,9 +75,15 @@ const Service = () => {
                 and professionals according to requirements.
               </p>
               <div className="btn-holder">
-                <Link to="contact"  smooth={true} offset={0} delay={0} duration={500} className="pi-btn2">
-                  <i className="far fa-window-maximize"></i>Get Started
-                </Link>
+              <Link
+            className="pi-btn2"
+            to="contact"
+            smooth={true}
+            delay={0}
+            duration={500}
+          >
+             <i className="fas fa-window-maximize"> </i>Get Started
+          </Link>
               </div>
             </div>
           </div>
@@ -85,9 +98,12 @@ const Service = () => {
                 user experience
               </p>
               <div className="btn-holder">
-              <Link to="contact"  smooth={true} offset={0} delay={0} duration={500} className="pi-btn2">
-                  <i className="fas fa-swatchbook"></i>Get Started
-              </Link>
+                <a
+                  href="https://piratescorp.com/hosting/cart.php?gid=2"
+                  className="pi-btn2"
+                >
+                  <i className="fas fa-globe-asia"></i>Get Started
+                </a>
               </div>
             </div>
             <div className="pic-side">

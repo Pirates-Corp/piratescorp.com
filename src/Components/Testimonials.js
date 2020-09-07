@@ -15,6 +15,32 @@ const Testmonials = () => {
         </div>
 
         <OwlCarousel className="owl-theme" loop margin={10} items={1}>
+
+        <div className="container item">
+            <div className="testimonial-row">
+              <div className="testimonial-pic">
+                <div className="person-bg">
+                  <img className="person" src={client3} alt="chillstudies" />
+                </div>
+              </div>
+
+              <div className="testimonial-review">
+                <p className="review">
+                Hi from Turkey. Great work from Piratescorp, this hosting was really good. And also good customer service they have, whenever I need help they were always there.
+                </p>
+
+                <div className="client-details">
+                  <p className="client-name">Adile cetinkaya</p>
+                  <a href="/srimurugansculpture.com" className="website">
+                    Web Developer.
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
           <div className="container item">
             <div className="testimonial-row">
               <div className="testimonial-pic">
@@ -67,28 +93,7 @@ const Testmonials = () => {
 
 
 
-          <div className="container item">
-            <div className="testimonial-row">
-              <div className="testimonial-pic">
-                <div className="person-bg">
-                  <img className="person" src={client3} alt="chillstudies" />
-                </div>
-              </div>
-
-              <div className="testimonial-review">
-                <p className="review">
-                Hi from Turkey. Great work from Piratescorp, this hosting was really good. And also good customer service they have, whenever I need help they were always there.
-                </p>
-
-                <div className="client-details">
-                  <p className="client-name">Adile cetinkaya</p>
-                  <a href="/srimurugansculpture.com" className="website">
-                    Web Developer.
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+        
 
 
 
