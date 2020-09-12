@@ -6,7 +6,7 @@
 // import Contact from "../Components/Contact";
 // import Footer from "../Components/Footer";
 
-import React, { Suspense, lazy, useEffect } from 'react';
+import React, { Suspense, lazy} from 'react';
 // import * as Scroll from 'react-scroll'
 const  Home = lazy(()=>import("../Components/Home"));
 const  Service  = lazy(()=>import("../Components/Service"));
@@ -16,14 +16,18 @@ const  Contact   = lazy(()=>import("../Components/Contact"));
 const  Footer   = lazy(()=>import("../Components/Footer"));
 
 
-const scroll = (url,thread) => {
-    const elementId = url.substring(1).toLocaleLowerCase()
+const scroll = (url,thread,props) => {
+
+
+    const elementId = url.substring(1).toLowerCase()
     const element = document.getElementById(elementId) 
 
     if( element!=null ){
       window.scrollTo(0,element.offsetTop)
       clearInterval(thread)
-    }  else if(elementId.length ==0 ) {
+  
+     
+    }  else if(elementId.length ===0 ) {
       clearInterval(thread)
     }
 }
@@ -33,7 +37,7 @@ function Homepage(props) {
   const url = props.history.location.pathname+""
 
   const thread = setInterval(()=>{
-    scroll(url,thread)
+    scroll(url,thread,props)
   }, 500);
   
   return (

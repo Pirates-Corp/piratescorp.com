@@ -57,15 +57,7 @@ const Footer = () => {
                 <h4 className="footer-heading">company</h4>
                 <ul className="footer-list">
                   <li>
-                    <Link
-                      to="about"
-                      smooth={true}
-                      offset={0}
-                      delay={0}
-                      duration={500}
-                    >
-                      About
-                    </Link>
+                  <a href="/about">About</a>
                   </li>
                   <li>
                     <a href="/terms-and-conditions">terms and Conditions</a>

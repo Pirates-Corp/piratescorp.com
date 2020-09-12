@@ -82,7 +82,7 @@ const Service = () => {
             delay={0}
             duration={500}
           >
-             <i className="fas fa-window-maximize"> </i>Get Started
+          <i className="fas fa-window-maximize"> </i>Get Started
           </Link>
               </div>
             </div>
