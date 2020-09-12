@@ -16,10 +16,11 @@ export default function Routes() {
   return (
     <Suspense fallback={<p> </p>}>
     <Switch>
-      <Route path="/" exact component={Home} />
+      
       <Route path="/terms-and-conditions" component={tos} />
       <Route path="/privacy-policy" component={pp} />
-      <Route component={error}/>
+      <Route path="/404" component={error} />
+      <Route path="/" component={Home} />
     </Switch>
      </Suspense>
   );

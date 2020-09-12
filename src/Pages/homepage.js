@@ -6,7 +6,8 @@
 // import Contact from "../Components/Contact";
 // import Footer from "../Components/Footer";
 
-import React, { Suspense, lazy } from 'react';
+import React, { Suspense, lazy, useEffect } from 'react';
+// import * as Scroll from 'react-scroll'
 const  Home = lazy(()=>import("../Components/Home"));
 const  Service  = lazy(()=>import("../Components/Service"));
 const  Testimonials  = lazy(()=>import("../Components/Testimonials"));
@@ -15,15 +16,33 @@ const  Contact   = lazy(()=>import("../Components/Contact"));
 const  Footer   = lazy(()=>import("../Components/Footer"));
 
 
+const scroll = (url,thread) => {
+    const elementId = url.substring(1).toLocaleLowerCase()
+    const element = document.getElementById(elementId) 
 
-function homepage() {
+    if( element!=null ){
+      window.scrollTo(0,element.offsetTop)
+      clearInterval(thread)
+    }  else if(elementId.length ==0 ) {
+      clearInterval(thread)
+    }
+}
+
+function Homepage(props) {
+
+  const url = props.history.location.pathname+""
+
+  const thread = setInterval(()=>{
+    scroll(url,thread)
+  }, 500);
+  
   return (
     <React.Fragment>
       <Suspense fallback={<p> </p>}>
-      <Home />
+      <Home/>
       <Service />
       <Testimonials />
-      <About />
+      <About/>
       <Contact />
       <Footer />
       </Suspense>
@@ -31,4 +50,4 @@ function homepage() {
   );
 }
 
-export default homepage;
+export default Homepage;

@@ -1,10 +1,10 @@
 import React from "react";
 import logo from "../img/logo-about.png";
 
-const About = () => {
+const About = (props) => {
   return (
     <React.Fragment>
-      <section id="about">
+      <section id="about" name="about">
         <div className="container">
           <div className="about-row">
             <div className="logo-box">
