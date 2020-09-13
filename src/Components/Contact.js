@@ -37,9 +37,11 @@ const Contact = () => {
                   <i id="contact-icon" className="fas fa-location-arrow" />
                   <h4 id="info-head">Location</h4>
                   <p id="contact-info">
-                    No: 93,Shop complex,Five rathas,
+                    No: 5/2,Vedhachallam Nager,
                     <br />
-                    Mahabalipuram,India
+                    Near St. Mary's Matriculation school,
+                    <br />
+                    Mahabalipuram-603 104, India.
                   </p>
                 </div>
               </div>

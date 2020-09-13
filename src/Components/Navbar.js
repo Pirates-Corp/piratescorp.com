@@ -1,12 +1,16 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { useHistory } from "react-router-dom";
 import logo from "../img/logo.png";
 import navbtn from "../img/nav.svg";
-const Navbar = () => {
-  const close = () => {
+const Navbar = (props) => {
+  const history = useHistory();
+
+  const close = (e, url) => {
+    e.preventDefault();
     if (document.getElementById("check-box")) {
       document.getElementById("check-box").checked = false;
     }
+    history.push(url);
   };
 
   return (
@@ -24,16 +28,14 @@ const Navbar = () => {
 
           <ul id="holder">
             <li>
-              <Link
-                onClick={close}
-                to="about"
-                smooth={true}
-                offset={0}
-                delay={0}
-                duration={500}
+              <a
+                href="/about"
+                onClick={(e) => {
+                  close(e, "about");
+                }}
               >
                 About
-              </Link>
+              </a>
             </li>
             <li>
               <a href="https://piratescorp.com/hosting/clientarea.php">Login</a>
@@ -44,29 +46,25 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <Link
-                onClick={close}
-                to="customers"
-                smooth={true}
-                offset={0}
-                delay={0}
-                duration={100}
+              <a
+                href="/customers"
+                onClick={(e) => {
+                  close(e, "customers");
+                }}
               >
                 Customers
-              </Link>
+              </a>
             </li>
 
             <li>
-              <Link
-                onClick={close}
-                to="contact"
-                smooth={true}
-                offset={0}
-                delay={0}
-                duration={100}
+              <a
+                href="/contact"
+                onClick={(e) => {
+                  close(e, "contact");
+                }}
               >
                 Contact
-              </Link>
+              </a>
             </li>
 
             <label htmlFor="check-box" id="close-menu">

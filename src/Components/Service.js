@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-scroll";
 import server from "../img/service-img/secure_server.svg";
 import design from "../img/service-img/design.svg";
-import domain from "../img/service-img/Domain.svg";
+import domain from "../img/service-img/Domain.gif";
 import website from "../img/service-img/website.svg";
 
 const Service = () => {
@@ -75,15 +74,9 @@ const Service = () => {
                 and professionals according to requirements.
               </p>
               <div className="btn-holder">
-              <Link
-            className="pi-btn2"
-            to="contact"
-            smooth={true}
-            delay={0}
-            duration={500}
-          >
-          <i className="fas fa-window-maximize"> </i>Get Started
-          </Link>
+                <a className="pi-btn2" href="contact">
+                  <i className="fas fa-window-maximize"> </i>Get Started
+                </a>
               </div>
             </div>
           </div>

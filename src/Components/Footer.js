@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-scroll";
 import logo_white from "../img/logo-footer.png";
 
 const Footer = () => {
@@ -29,26 +28,10 @@ const Footer = () => {
                     </a>
                   </li>
                   <li>
-                    <Link
-                      to="contact"
-                      smooth={true}
-                      offset={0}
-                      delay={0}
-                      duration={500}
-                    >
-                      Website Development
-                    </Link>
+                    <a href="contact">Website Development</a>
                   </li>
                   <li>
-                    <Link
-                      to="contact"
-                      smooth={true}
-                      offset={0}
-                      delay={0}
-                      duration={500}
-                    >
-                      Graphic and Web Designing
-                    </Link>
+                    <a href="contact">Graphic and Web Designing</a>
                   </li>
                 </ul>
               </div>
@@ -57,7 +40,7 @@ const Footer = () => {
                 <h4 className="footer-heading">company</h4>
                 <ul className="footer-list">
                   <li>
-                  <a href="/about">About</a>
+                    <a href="/about">About</a>
                   </li>
                   <li>
                     <a href="/terms-and-conditions">terms and Conditions</a>

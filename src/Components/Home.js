@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-scroll";
 import sea from "../img/home-items/sea.png";
 import boat from "../img/home-items/Boat.png";
 import Navbar from "../Components/Navbar";
@@ -50,15 +49,9 @@ const Home = () => {
             Let's make huge by <br />
             doing small
           </h2>
-          <Link
-            className="pi-btn"
-            to="service"
-            smooth={true}
-            delay={0}
-            duration={500}
-          >
+          <a className="pi-btn" href="/service">
             Get Started
-          </Link>
+          </a>
         </div>
 
         <img src={boat} className="boat" id="boat" alt="boat" />
