@@ -221,7 +221,7 @@ nav 2
     top: 40px;
     right: 40px;
     font-size: 2.5em;
-    color: var(--bay);
+    color: var(--black);
   }
 
   #check-box {
@@ -798,7 +798,7 @@ nav 2
     top: 40px;
     right: 40px;
     font-size: 2.5em;
-    color: var(--bay);
+    color: var(--black);
   }
 
   #check-box {
@@ -1378,7 +1378,7 @@ nav 2
     top: 40px;
     right: 40px;
     font-size: 3em;
-    color: var(--bay);
+    color: var(--black);
   }
 
   #check-box {

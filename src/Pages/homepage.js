@@ -7,7 +7,6 @@
 // import Footer from "../Components/Footer";
 
 import React, { Suspense, lazy } from "react";
-
 const Home = lazy(() => import("../Components/Home"));
 const Service = lazy(() => import("../Components/Service"));
 const Testimonials = lazy(() => import("../Components/Testimonials"));
@@ -20,12 +19,23 @@ const scroll = (url, thread, props) => {
   const element = document.getElementById(elementId);
 
   if (element != null) {
-    window.scrollTo(0, element.offsetTop);
+    const options = {
+      top: element.offsetTop,
+      left: 0,
+      behavior: "smooth",
+    };
+    // window.scrollTo(options);
+    const supportsNativeSmoothScroll =
+      "scrollBehavior" in document.documentElement.style;
+    supportsNativeSmoothScroll
+      ? window.scrollTo(options)
+      : window.scrollTo(0, element.offsetTop);
+
+    props.history.push("/");
     clearInterval(thread);
   } else if (elementId.length === 0) {
     clearInterval(thread);
   }
-  props.history.push("/");
 };
 
 function Homepage(props) {
