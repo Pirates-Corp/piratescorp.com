@@ -42,8 +42,8 @@ const Testmonials = () => {
         </div>
 
         <OwlCarousel className="owl-theme" loop margin={10} items={1}>
-          {clients.map((client) => (
-            <div className="container item">
+          {clients.map((client,index) => (
+            <div key={index} className="container item">
               <div className="testimonial-row">
                 <div className="testimonial-pic">
                   <div className="person-bg">
