@@ -42,7 +42,7 @@ const Testmonials = () => {
         </div>
 
         <OwlCarousel className="owl-theme" loop margin={10} items={1}>
-          {clients.map((client,index) => (
+          {clients.map((client, index) => (
             <div key={index} className="container item">
               <div className="testimonial-row">
                 <div className="testimonial-pic">
@@ -60,7 +60,14 @@ const Testmonials = () => {
 
                   <div className="client-details">
                     <p className="client-name">{client.name}</p>
-                    <a href="/srimurugansculpture.com" className="website">
+                    <a
+                      href={
+                        client.website.includes(".com")
+                          ? `https://` + client.website
+                          : "/customers"
+                      }
+                      className="website"
+                    >
                       {client.website}
                     </a>
                   </div>

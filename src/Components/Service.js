@@ -48,7 +48,10 @@ const Service = () => {
                 provided at its best.
               </p>
               <div className="btn-holder">
-                <a href="https://piratescorp.com/hosting/" className="pi-btn2">
+                <a
+                  href="https://piratescorp.com/hosting/index.php"
+                  className="pi-btn2"
+                >
                   <i className="fas fa-globe-asia"></i>Get Domain
                 </a>
               </div>
