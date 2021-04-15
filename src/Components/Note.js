@@ -4,8 +4,7 @@ const Note = () =>{
     return (
         <>
           <div className="note">
-              <p>Piratescorp.com is Under Construction , Click <a href="contact">Here</a> to Contact us</p>
-              
+              <p>Piratescorp.com is Under Construction , Click <a href="/contact">Here</a> to Contact us</p>
           </div>
         </>
     )

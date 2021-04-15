@@ -29,7 +29,7 @@ const Service = () => {
               </p>
               <div className="btn-holder">
                 <a
-                  href="contact"
+                  href="/contact"
                   className="pi-btn2"
                 >
                   <i className="fas fa-server"></i>View Plans
@@ -49,7 +49,7 @@ const Service = () => {
               </p>
               <div className="btn-holder">
                 <a
-                  href="contact"
+                  href="/contact"
                   className="pi-btn2"
                 >
                   <i className="fas fa-globe-asia"></i>Get Domain
@@ -77,7 +77,7 @@ const Service = () => {
                 and professionals according to requirements.
               </p>
               <div className="btn-holder">
-                <a className="pi-btn2" href="contact">
+                <a className="pi-btn2" href="/contact">
                   <i className="fas fa-window-maximize"> </i>Get Started
                 </a>
               </div>
@@ -95,7 +95,7 @@ const Service = () => {
               </p>
               <div className="btn-holder">
                 <a
-                  href="contact"
+                  href="/contact"
                   className="pi-btn2"
                 >
                   <i className="fas fa-globe-asia"></i>Get Started

@@ -18,20 +18,20 @@ const Footer = () => {
                 <h4 className="footer-heading">Service</h4>
                 <ul className="footer-list">
                   <li>
-                    <a href="https://piratescorp.com/hosting/cart.php">
+                    <a href="/contact">
                       Web hosting
                     </a>
                   </li>
                   <li>
-                    <a href="https://piratescorp.com/hosting/">
+                    <a href="/contact">
                       Domain Registeration
                     </a>
                   </li>
                   <li>
-                    <a href="contact">Website Development</a>
+                    <a href="/contact">Website Development</a>
                   </li>
                   <li>
-                    <a href="contact">Graphic and Web Designing</a>
+                    <a href="/contact">Graphic and Web Designing</a>
                   </li>
                 </ul>
               </div>
