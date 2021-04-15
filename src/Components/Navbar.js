@@ -27,6 +27,15 @@ const Navbar = (props) => {
           </label>
 
           <ul id="holder">
+          
+            {/* <li>
+              <a href="https://piratescorp.com/hosting/clientarea.php">Login</a>
+            </li>
+            <li>
+              <a href="https://piratescorp.com/hosting/register.php">
+                Register
+              </a>
+            </li> */}
             <li>
               <a
                 href="/about"
@@ -35,14 +44,6 @@ const Navbar = (props) => {
                 }}
               >
                 About
-              </a>
-            </li>
-            <li>
-              <a href="https://piratescorp.com/hosting/clientarea.php">Login</a>
-            </li>
-            <li>
-              <a href="https://piratescorp.com/hosting/register.php">
-                Register
               </a>
             </li>
             <li>

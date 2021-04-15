@@ -57,19 +57,12 @@ const Testmonials = () => {
 
                 <div className="testimonial-review">
                   <p className="review">{client.review}</p>
-
                   <div className="client-details">
                     <p className="client-name">{client.name}</p>
-                    <a
-                      href={
-                        client.website.includes(".com")
-                          ? `https://` + client.website
-                          : "/customers"
-                      }
-                      className="website"
-                    >
+                    <span className="website">
                       {client.website}
-                    </a>
+                    </span>
+         
                   </div>
                 </div>
               </div>

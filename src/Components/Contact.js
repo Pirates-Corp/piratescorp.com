@@ -19,8 +19,8 @@ const Contact = () => {
                 <div className="contact-item">
                   <i id="contact-icon" className="fas fa-id-badge" />
                   <h4 id="info-head">Tap to Call</h4>
-                  <a id="contact-info" href="tel:+918428015452">
-                    +91 84280 15452
+                  <a id="contact-info" href="tel:+919840793240">
+                    +91 98407 93240
                   </a>
                 </div>
                 <div className="contact-item">

@@ -29,7 +29,7 @@ const Service = () => {
               </p>
               <div className="btn-holder">
                 <a
-                  href="https://piratescorp.com/hosting/cart.php"
+                  href="contact"
                   className="pi-btn2"
                 >
                   <i className="fas fa-server"></i>View Plans
@@ -49,7 +49,7 @@ const Service = () => {
               </p>
               <div className="btn-holder">
                 <a
-                  href="https://piratescorp.com/hosting/index.php"
+                  href="contact"
                   className="pi-btn2"
                 >
                   <i className="fas fa-globe-asia"></i>Get Domain
@@ -86,7 +86,7 @@ const Service = () => {
 
           <div className="service-row">
             <div className="info-side">
-              <h4 className="service-heading">Graphic and Web Designing</h4>
+              <h4 className="service-heading">Design Solutions</h4>
               <p className="service-info">
                 Wanna design more interactive posters and unique logos for your
                 business or advertising purpose? do reach us with content and
@@ -95,7 +95,7 @@ const Service = () => {
               </p>
               <div className="btn-holder">
                 <a
-                  href="https://piratescorp.com/hosting/cart.php?gid=2"
+                  href="contact"
                   className="pi-btn2"
                 >
                   <i className="fas fa-globe-asia"></i>Get Started

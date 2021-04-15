@@ -2,7 +2,9 @@ import React from "react";
 import sea from "../img/home-items/sea.png";
 import boat from "../img/home-items/Boat.png";
 import Navbar from "../Components/Navbar";
+import Note from "../Components/Note"
 import land from "../img/home-items/land.png";
+
 
 const Home = () => {
   window.addEventListener("scroll", () => {
@@ -43,6 +45,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <section id="home">
+        <Note/>
         <Navbar />
         <div className="get">
           <h2 className="title">

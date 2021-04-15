@@ -21,6 +21,7 @@ a {
 }
 textarea {
   resize: vertical; /* user can resize vertically, but width is fixed */
+  font-family: Roboto;
 }
 .content {
   min-height: 100vh;
@@ -147,6 +148,32 @@ li {
   padding-bottom: 20px;
   font-family: "poppins";
 }
+
+
+.note
+{
+  width: 100%;
+  padding: .8rem 0;
+  height: 1rem;
+  display: grid;
+  place-content: center;
+  background-color: #ec3459;
+
+}
+.note p
+{
+  font-family:  Roboto;
+  color : var(--white);
+  font-size: .8rem;
+}
+.note p > a
+{
+  font-size: .8rem;
+  font-family:  Roboto;
+  color : var(--white);
+  text-decoration: underline;
+}
+
 
 @media all and (max-width: 599px) {
   /* for-phone */
@@ -1984,7 +2011,7 @@ nav 2
     text-align: center;
     margin-top: 30px;
     transition: 0.6s;
-    width: 50em;
+    width: 35em;
     height: 3em;
     list-style: none;
   }
@@ -2119,7 +2146,7 @@ nav 2
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-    height: 45vh;
+    height: 50vh;
     margin-bottom: 6rem;
   }
   .pic-side {
