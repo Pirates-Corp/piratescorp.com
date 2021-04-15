@@ -1,10 +1,19 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import server from "../img/service-img/secure_server.svg";
 import design from "../img/service-img/design.svg";
 import domain from "../img/service-img/Domain.gif";
 import website from "../img/service-img/website.svg";
 
 const Service = () => {
+  const history = useHistory();
+  const push = (e, url) => {
+      e.preventDefault();
+      if (document.getElementById("check-box")) {
+        document.getElementById("check-box").checked = false;
+      }
+      history.push(url);
+    };
   return (
     <React.Fragment>
       <section id="service">
@@ -29,10 +38,11 @@ const Service = () => {
               </p>
               <div className="btn-holder">
                 <a
-                  href="contact"
+                  onClick={(e) => push(e, "contact")}
+                  href="/contact"
                   className="pi-btn2"
                 >
-                  <i className="fas fa-server"></i>View Plans
+                  <i className="fas fa-server"></i>Contact for Plans
                 </a>
               </div>
             </div>
@@ -49,7 +59,8 @@ const Service = () => {
               </p>
               <div className="btn-holder">
                 <a
-                  href="contact"
+                  onClick={(e) => push(e, "contact")}
+                  href="/contact"
                   className="pi-btn2"
                 >
                   <i className="fas fa-globe-asia"></i>Get Domain
@@ -77,7 +88,11 @@ const Service = () => {
                 and professionals according to requirements.
               </p>
               <div className="btn-holder">
-                <a className="pi-btn2" href="contact">
+                <a 
+                onClick={(e) => push(e, "contact")}
+                href="/contact"
+                className="pi-btn2" 
+                >
                   <i className="fas fa-window-maximize"> </i>Get Started
                 </a>
               </div>
@@ -95,7 +110,8 @@ const Service = () => {
               </p>
               <div className="btn-holder">
                 <a
-                  href="contact"
+                  onClick={(e) => push(e, "contact")}
+                  href="/contact"
                   className="pi-btn2"
                 >
                   <i className="fas fa-globe-asia"></i>Get Started
