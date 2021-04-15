@@ -4,7 +4,7 @@ import logo from "../img/logo.png";
 import navbtn from "../img/nav.svg";
 const Navbar = (props) => {
   const history = useHistory();
-
+ 
   const close = (e, url) => {
     e.preventDefault();
     if (document.getElementById("check-box")) {

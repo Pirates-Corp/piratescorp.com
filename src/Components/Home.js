@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import sea from "../img/home-items/sea.png";
 import boat from "../img/home-items/Boat.png";
 import Navbar from "../Components/Navbar";
@@ -7,6 +8,17 @@ import land from "../img/home-items/land.png";
 
 
 const Home = () => {
+
+  const history = useHistory();
+
+  const push = (e, url) => {
+    e.preventDefault();
+    if (document.getElementById("check-box")) {
+      document.getElementById("check-box").checked = false;
+    }
+    history.push(url);
+  };
+
   window.addEventListener("scroll", () => {
     let winScrl = window.scrollY;
     let sunVal = 80;
@@ -52,7 +64,7 @@ const Home = () => {
             Let's make huge by <br />
             doing small
           </h2>
-          <a className="pi-btn" href="/service">
+          <a className="pi-btn"  onClick={(e) =>push(e, "service")} href="/service"  >
             Get Started
           </a>
         </div>
