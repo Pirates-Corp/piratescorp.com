@@ -1,8 +1,18 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 import logo_white from "../img/logo-footer.png";
-
 const Footer = () => {
+  const history = useHistory();
+
+  const close = (e, url) => {
+    e.preventDefault();
+    if (document.getElementById("check-box")) {
+      document.getElementById("check-box").checked = false;
+    }
+    history.push(url);
+  };
+
   return (
     <React.Fragment>
       <footer id="footer">
@@ -19,14 +29,10 @@ const Footer = () => {
                 <h4 className="footer-heading">Service</h4>
                 <ul className="footer-list">
                   <li>
-                    <a href="/contact">
-                      Web hosting
-                    </a>
+                    <a href="/contact">Web hosting</a>
                   </li>
                   <li>
-                    <a href="/contact">
-                      Domain Registeration
-                    </a>
+                    <a href="/contact">Domain Registeration</a>
                   </li>
                   <li>
                     <a href="/contact">Website Development</a>
@@ -41,7 +47,14 @@ const Footer = () => {
                 <h4 className="footer-heading">company</h4>
                 <ul className="footer-list">
                   <li>
-                    <a href="/about">About</a>
+                    <a
+                      href="/about"
+                      onClick={(e) => {
+                        close(e, "about");
+                      }}
+                    >
+                      About
+                    </a>
                   </li>
                   <li>
                     <Link to="/terms-and-conditions">terms and Conditions</Link>
