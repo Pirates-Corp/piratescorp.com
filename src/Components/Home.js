@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import sea from "../img/home-items/sea.png";
 import boat from "../img/home-items/Boat.png";
 import Navbar from "../Components/Navbar";
-import Note from "../Components/Note"
+//import Note from "../Components/Note"
 import land from "../img/home-items/land.png";
 
 
@@ -57,7 +57,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <section id="home">
-        <Note/>
+        {/* <Note/> */}
         <Navbar />
         <div className="get">
           <h2 className="title">

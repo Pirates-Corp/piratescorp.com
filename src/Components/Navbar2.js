@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = (props) =>{
   return(
@@ -6,10 +7,9 @@ const Navbar = (props) =>{
       <header>
         <nav className="nav2">
           
-
-        <a href="/" >
+        <Link to="/">
         <i className="fas fa-chevron-circle-left"></i>
-                </a>
+        </Link>   
         <h2>{props.heading}</h2>
         </nav>
       </header>

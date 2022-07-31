@@ -40,7 +40,7 @@ function treams() {
             <li>
               <p>
                 <strong>Company</strong> (referred to as either &quot;the
-                Company &quot;, &quot;We&quot;, &quot;S&quot; or &quot;Our&quot;
+                Company &quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot;
                 in this Agreement) refers to piratescorp.com.
               </p>
             </li>
