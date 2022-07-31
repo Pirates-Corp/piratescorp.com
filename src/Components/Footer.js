@@ -29,16 +29,44 @@ const Footer = () => {
                 <h4 className="footer-heading">Service</h4>
                 <ul className="footer-list">
                   <li>
-                    <a href="/contact">Web hosting</a>
+                    <a
+                      href="/contact"
+                      onClick={(e) => {
+                        close(e, "contact");
+                      }}
+                    >
+                      Web hosting
+                    </a>
                   </li>
                   <li>
-                    <a href="/contact">Domain Registeration</a>
+                    <a
+                      href="/contact"
+                      onClick={(e) => {
+                        close(e, "contact");
+                      }}
+                    >
+                      Domain Registration
+                    </a>
                   </li>
                   <li>
-                    <a href="/contact">Website Development</a>
+                    <a
+                      href="/contact"
+                      onClick={(e) => {
+                        close(e, "contact");
+                      }}
+                    >
+                      Website Development
+                    </a>
                   </li>
                   <li>
-                    <a href="/contact">Graphic and Web Designing</a>
+                    <a
+                      href="/contact"
+                      onClick={(e) => {
+                        close(e, "contact");
+                      }}
+                    >
+                      Graphic and Web Designing
+                    </a>
                   </li>
                 </ul>
               </div>
